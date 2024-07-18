@@ -32,9 +32,6 @@ body{
     font-weight:600;
     grid-row: span 2;
     padding:5% 5%;
-    display:grid;
-    grid-template-rows: 10% 50% 30%;
-    gap:12px;
 }
 
 /* sidebar icon settings */
@@ -117,6 +114,11 @@ ul{
     margin-top:1rem;
 }
 
+/* makes the 'hi there' smaller */
+.text>span{
+    font-size:12px;
+}
+
 /* resize welcome pfp */
 .welcome>.pfp{
     height:65px;
@@ -138,14 +140,108 @@ ul{
     border-radius:50px;
     border:none;
     color:white;
-    font-size:15px;
+    font-size:14px;
+    text-align:center;
     padding:10px 20px;
-    width:80px;
+    width:75px;
     text-align:center;
     font-weight:600;
 }
 
 /* ---------------------------------------------------------- */
 .body{
-    
+    background-color:rgb(225, 232, 238);
+    box-shadow: 0px -2px 2px rgb(202, 201, 201);
+    display:grid;
+    grid-template-columns: 75% 25%;
+    padding: 50px 20px;
+}
+
+.your-projects{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+/* sets the height of the icons */
+.body-icons>img{
+    width:20px;
+    height:20px;
+}
+
+/* positions the icons in the cards */
+.body-icons{
+position:absolute;
+bottom:0;
+right:0;
+margin:20px;
+display:flex;
+gap:1rem;
+}
+
+/* sets font of headers in cards */
+.card>h1{
+    font-size: 17px;
+}
+
+/* sets color and size of text in cards */
+.card>p{
+    color:grey;
+    font-size:15px;
+}
+
+/* card cosmetics */
+.card{
+    position:relative;
+    height: 175px;
+    background-color:white;
+    padding:15px;
+    border-radius: 5px;
+    box-shadow: -5px 0px 0px rgb(253, 177, 11);
+}
+
+/* sets up grid for announcments and trending */
+.ann-trend{
+    display:grid;
+    grid-template-rows: 1fr 1fr;
+    gap:15px;
+}
+
+.ann-card, .trend-card{
+    background-color:white;
+    padding:15px;
+    border-radius: 5px;
+    margin-left: 15px;
+}
+
+.trend-card{
+    display:grid;
+    grid-template-rows: repeat(4, 1fr);
+}
+
+.ann-card>p{
+    font-size: 12px;
+}
+
+.ann-card>h2{
+    font-size: 15px;
+}
+
+.profile>img{
+    height:40px;
+    width:40px;
+    border-radius:50px;
+}
+
+.profile>div{
+font-size:15px;
+}
+
+.profile>div>span{
+    color:grey;
+}
+
+.profile{
+    display:flex;
+    gap:8px;
 }
